@@ -19,8 +19,8 @@ public class Puebas {
     }
     @Test
     public void prueba_deberiaMandarElFrizzBuzzPorqueEsMultiploDe3y5() {
-        // Arrange
-        int num = 1;
+       // Arrange
+        int num = 15;
         // Act
         String resultado = prueba.prueba(15);
         // Assert
@@ -30,9 +30,9 @@ public class Puebas {
     @Test
     public void prueba_deberiaMandarElFrizzBuzzPorqueEsMultiploDe3() {
         // Arrange
-        int num = 1;
+        int num = 9;
         // Act
-        String resultado = prueba.prueba(9);
+        String resultado = prueba.prueba(num);
         // Assert
         Assert.assertEquals("Fizz",resultado);
     }
@@ -40,11 +40,18 @@ public class Puebas {
 
     @Test
     public void prueba_deberiaMandarElFrizzBuzzPorqueEsMultiploDe5() {
-        // Arrange
-        int num = 1;
+       // Arrange
+        int num = 10;
         // Act
-        String resultado = prueba.prueba(25);
+        String resultado = prueba.prueba(num);
         // Assert
         Assert.assertEquals("Buzz",resultado);
+        // Arrange
+        int num1 = 52;
+        // Act
+        String resultado1 = prueba.prueba(num);
+        // Assert
+        Assert.assertEquals("Buzz",resultado1);
+   
     }
 }
